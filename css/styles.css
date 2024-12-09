@@ -1,0 +1,164 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/124Wli0Rxp4GhOrrOijzznbnOfNC9kP8wOVZnPZsR2DE/edit?usp=sharing */
+body {background-color: #D98555;}
+
+nav {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0px;
+  height: 80px;
+  font-size: 20px;
+  overflow: auto;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  background-color: #131D26;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  align-items: center; 
+  color: white;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.navdiv{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo {
+  /*border: 2px solid white;*/
+  display: inline-block;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.LIabout {
+  background-color: #D98555;
+  
+}
+
+/*Light logo {float: left; 
+}
+
+blockquote {
+  height: 450px;
+  border: 2px solid white;
+  display: inline-block;
+}*/
+
+#grid1{margin: 0px 10px;
+  display: grid;
+  padding: 5px 0px 0px 10px;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 50% 50%;
+/*border: 2px solid white*/}
+
+.couple {}
+
+.about {font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0px;
+  font-size: 24px;
+  align-items: center;
+}
+
+.Bio {font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: grid;
+  float: right;
+  padding: 15px 15px 15px 20px;
+}
+
+#grid2{margin: 0px 10px;
+  display: grid;
+  padding: 5px 0px 0px 10px;
+  min-height: 433px;
+  column-gap: 15px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 25% 25% 25% 25%;
+  /*border: 2px solid white;*/}
+
+.PourP{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 4;
+  /*border: 2px solid white;*/
+}
+
+.contact {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 350px;
+  height: 185px;
+  background-color: #082B59;
+  grid-column: 3 / 5;
+  grid-row: 1 / span 2;
+  /*border: 2px solid white;*/
+}
+
+.contactB {
+  background-color: #F2F2F2 ;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+/*#Pour{
+  background-color: #59331D;
+}*/
+
+.PourA{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  width: 350px;
+  height: 185px;
+  font-size: 24px;
+  grid-column: 3 / 5;
+  grid-column-start: 3;
+  grid-row: 3 / span 2;
+  align-content: center;
+  justify-content: center;
+  /*border: 2px solid white;*/
+}
+
+.PourD{
+  display: inline-grid;
+  grid-column: 4 / 5;
+  grid-row: 1 / span 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  /*border: 2px solid white;*/
+}
+
+footer {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #131D26;
+  color: grey;
+  Text-align: center;
+}
