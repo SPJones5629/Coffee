@@ -9,10 +9,14 @@ div {
   border: 1px solid rgb(21, 0, 255);
 }
 
-body {background-color: #D98555;}
+body {background-color: #D98555;
+  margin: 0;
+  padding: 0;}
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
-  body{ background-color: #59331D;}
+  body{ background-color: #59331D;
+    margin: 0;
+    padding: 0;}
 
 .navbar{}
 
@@ -35,30 +39,57 @@ nav ul{
     margin: 10px 10px;
     border-radius: 8px;
   }
+
+  .contactC:hover {
+    background-color: #F2F2F2;
+    color: #D98555;}
+
+    #grid4{
+      margin: 0px 0px;
+      display: grid;
+      gap: 0px;
+      padding: 0px 0px 0px 0px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 576px) {
-  body{ background-color: #F2F2F2;}
+@media screen and (max-width: 768px) {
+  body{ background-color: #D98555;
+  margin: 0;
+  padding: 0;
+  }
+
+  nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  }
+  
+  .navbar li {
+    display: block;
+  }
 
   #grid3 {margin: 0px 25px;
     display: grid;
+    justify-self: center;
     padding: 5px 0px 0px 10px;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
    }
 
     .Bio {font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     display: grid;
     float: center;
-    padding: 0px 0px 0px 0px;
-    grid-column: 1 / 1;
+    padding: 20px;
+    grid-column: 1 / span 2;
     grid-row: 1 / 2;
   }
 
   .cover{
-    grid-column: 1 / 1;
+    grid-column: 1 / span 2;
     grid-row: 2 / 2;
   }
 
@@ -70,15 +101,128 @@ nav ul{
   }
 
   .contactC {
-    background-color: #59331D;
+    background-color: #082B59;
     border: none;
-    color: black;
-    padding: 10px 18px;
+    color: white;
+    padding: 14px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 12px;
     margin: 10px 10px;
-    border-radius: 8px;
+    border-radius: 50%;
+  }
+  .contactC:hover {
+    background-color: #F2F2F2;
+    color: #D98555;}
+
+    #grid1{margin: 0px 10px;
+      display: grid;
+      gap: 20px;
+      padding: 5px 0px 0px 10px;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+    }  
+
+    #grid2{margin: 0px 0px;
+      display: grid;
+      padding: 0px 0px 0px 10px;
+      column-gap: 0px;
+      grid-template-columns: 100%;
+      grid-template-rows: 100%;
+    }
+
+    .PourP{
+      display: none;
+      width: 40%;
+    }
+    
+    .PourA{
+      visibility: hidden;
+    }
+
+    .PourD{
+      visibility: hidden;
+     
+    }
+
+    .contact {
+      justify-content: center;
+      align-items: center;
+      display: block;
+      width: 600px;
+      height: 200px;
+      background-color: #082B59;
+      grid-column: 100%;
+      grid-row: 100%;
+    }
+
+    .contactB {
+      background-color: #F2F2F2 ;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      border-radius: 8px;
+    }
+
+  #grid4{
+    margin: 0px 0px;
+    display: grid;
+    gap: 0px;
+    padding: 0px 0px 0px 0px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+   }
+
+   .colum{
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 305px;
+    height: 220px; 
+  }
+  
+  .smPour{
+    display: block;
+    width: 75%;
+    grid-column: 100%;
+    grid-row: 1 / 3; 
+    visibility: hidden;
+  }
+  
+  .blended{
+    display: block;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    width: 305px;
+    height: 220px; 
+  }
+  
+  .beans{
+    display: block;
+    width: 75%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2; 
+  }
+  
+  .light{
+    display: block;
+    width: 60%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+    width: 305px;
+    height: 220px;
+    visibility: hidden;
+  }
+  
+  .menu{
+    display: block;
+    width: 100%;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2; 
   }
 }
 
@@ -155,6 +299,21 @@ nav ul{
   padding: 15px 15px 15px 20px;
   grid-row: 100%;
 }
+.contactC {
+  background-color: #131D26 ;
+  border: none;
+  color: #F2F2F2;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 10px;
+  border-radius: 8px;
+}
+
+.contactC:hover {
+  background-color: #F2F2F2;
+  color: #D98555;}
 
 #grid2{margin: 0px 10px;
   display: grid;
