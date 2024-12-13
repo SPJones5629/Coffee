@@ -1,6 +1,86 @@
 /* see the brand guide for colors, fonts, and images in CodePen: 
 https://docs.google.com/document/d/124Wli0Rxp4GhOrrOijzznbnOfNC9kP8wOVZnPZsR2DE/edit?usp=sharing */
+
+img {
+  border: 1px solid red;
+}
+
+div {
+  border: 1px solid rgb(21, 0, 255);
+}
+
 body {background-color: #D98555;}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  body{ background-color: #59331D;}
+
+.navbar{}
+
+nav ul{
+  width: 60%;
+}
+
+.cover{
+    width: 75%;
+  }
+
+.contactC {
+    background-color: #131D26 ;
+    border: none;
+    color: black;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 10px;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  body{ background-color: #F2F2F2;}
+
+  #grid3 {margin: 0px 25px;
+    display: grid;
+    padding: 5px 0px 0px 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+   }
+
+    .Bio {font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    float: center;
+    padding: 0px 0px 0px 0px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+  }
+
+  .cover{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+  #grid1{margin: 0px 10px;
+    display: grid;
+    padding: 5px 0px 0px 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .contactC {
+    background-color: #59331D;
+    border: none;
+    color: black;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 10px;
+    border-radius: 8px;
+  }
+}
 
 nav {
   font-family: "Poppins", sans-serif;
@@ -23,7 +103,9 @@ nav {
   align-items: center; 
   color: white;
   margin: 0px;
+  justify-content: flex-end;
   text-decoration: none;
+  width: 100%;
 }
 
 .navdiv{
@@ -32,8 +114,15 @@ nav {
 }
 
 .navLogo {
-  /*border: 2px solid white;*/
   display: inline-block;
+}
+
+nav a:hover{
+  background-color: #D98555;
+}
+
+nav ul{
+  width: 100%;
 }
 
 .navbar li {
@@ -43,28 +132,12 @@ nav {
   padding-left: 15px;
 }
 
-.LIabout {
-  background-color: #D98555;
-  
-}
-
-/*Light logo {float: left; 
-}
-
-blockquote {
-  height: 450px;
-  border: 2px solid white;
-  display: inline-block;
-}*/
-
 #grid1{margin: 0px 10px;
   display: grid;
   padding: 5px 0px 0px 10px;
   grid-template-columns: 65% 35%;
   grid-template-rows: 50% 50%;
-/*border: 2px solid white*/}
-
-.couple {}
+}
 
 .about {font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -80,33 +153,40 @@ blockquote {
   display: grid;
   float: right;
   padding: 15px 15px 15px 20px;
+  grid-row: 100%;
 }
 
 #grid2{margin: 0px 10px;
   display: grid;
   padding: 5px 0px 0px 10px;
   min-height: 433px;
-  column-gap: 15px;
+  column-gap: 0px;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 25% 25% 25% 25%;
-  /*border: 2px solid white;*/}
+}
+
+#grid3{margin: 0px 25px;
+ display: grid;
+ padding: 5px 0px 0px 10px;
+ grid-template-columns: 40% 60%;
+ grid-template-rows: 100%;
+}
+  
 
 .PourP{
   grid-column: 1 / span 2;
-  grid-row: 1 / span 4;
-  /*border: 2px solid white;*/
+  grid-row: 1 / span 3;
 }
 
 .contact {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 350px;
-  height: 185px;
+  width: auto;
+  height: auto;
   background-color: #082B59;
-  grid-column: 3 / 5;
+  grid-column: 3 / 3;
   grid-row: 1 / span 2;
-  /*border: 2px solid white;*/
 }
 
 .contactB {
@@ -121,33 +201,83 @@ blockquote {
   border-radius: 8px;
 }
 
-/*#Pour{
-  background-color: #59331D;
-}*/
-
 .PourA{
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
   display: flex;
-  width: 350px;
-  height: 185px;
-  font-size: 24px;
-  grid-column: 3 / 5;
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  grid-column: 3 / 3;
   grid-column-start: 3;
-  grid-row: 3 / span 2;
+  grid-row: 3 / 3;
   align-content: center;
   justify-content: center;
-  /*border: 2px solid white;*/
 }
 
 .PourD{
   display: inline-grid;
-  grid-column: 4 / 5;
-  grid-row: 1 / span 4;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  /*border: 2px solid white;*/
+  grid-column: 4 / span 5;
+  grid-row: 1 / span 3;
+}
+
+#grid4{
+  margin: 5px 0px;
+  display: grid;
+  gap: 10px 10px;
+  padding: 5px 0px 0px 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+ }
+
+.colum{
+  display: block;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  width: 305px;
+  height: 220px;
+  justify-self: left; 
+}
+
+.smPour{
+  display: block;
+  grid-column: 1 / 3;
+  grid-row: 2 / 2; 
+}
+
+.blended{
+  display: block;
+  grid-column: 3 / 3;
+  grid-row: 1 / 2;
+  width: 305px;
+  height: 220px;
+  justify-self: center;
+  align-content: center; 
+}
+
+.beans{
+  display: block;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2; 
+}
+
+.light{
+  display: block;
+  grid-column: 2 / 3;
+  grid-row: 2 / 2;
+  width: 305px;
+  height: 220px;
+  justify-self: center;
+  align-content: center; 
+}
+
+.menu{
+  display: block;
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+  justify-self: center;
+  align-content: center;  
 }
 
 footer {
